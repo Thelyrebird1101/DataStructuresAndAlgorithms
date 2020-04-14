@@ -12,7 +12,7 @@ public class MergeSortedArray {
 	}
 	
 	private static int[] mergeSorted(int[] arr1, int[] arr2) {
-		int[] arr3  = new int[arr1.length + arr2.length];
+		int[] arr3  = new int[arr1.length + arr2.length]; 
 		int i=0, j=0, k=0;
 		while(i<arr1.length && j<arr2.length) {
 			if(arr1[i]<arr2[j])

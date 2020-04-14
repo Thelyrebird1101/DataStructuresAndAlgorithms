@@ -2,12 +2,20 @@ package com.arrays;
 
 public class StringReversal {
 		public static void main(String[] args) {
-				String  name = "Hi My name is Lyrebird";
-				System.out.println("Input String is: "+ name);
-				System.out.print("Output String is: ");
-				char[] nameArray = name.toCharArray(); // Convert the String into a char array, using the toCharArray function
-				for (int i = nameArray.length-1; i>=0; i--) {
-					System.out.print(nameArray[i]);
+				String  str = "Hi My name is Lyrebird";
+				System.out.println("Given String is: "+ str);
+				System.out.println("Reversed String is: " + reverseString(str));
 				}
+
+		private static String reverseString(String str) {
+			if(	str == null || str.length()<2 ) 
+					return "Not good enough";
+			char[] strArray = str.toCharArray();
+			String reversedStr = "";
+			for (int i =  strArray.length-1; i>=0; i--) {
+				reversedStr+=strArray[i];
+			}
+			return reversedStr;
 		}
-}
+	}
+

@@ -6,8 +6,11 @@ public class StringReversal {
 				System.out.println("Given String is: "+ str);
 				System.out.println("Reversed String is: " + reverseString2(str));
 				}
+<<<<<<< HEAD
 
 		
+=======
+>>>>>>> branch 'master' of https://github.com/Thelyrebird1101/DataStructuresAndAlgorithms.git
 		// Using an array to reverse a string
 		private static String reverseString(String str) {
 			if(	str == null || str.length()<2 ) 
@@ -20,9 +23,13 @@ public class StringReversal {
 			return reversedStr;
 		}
 		
+<<<<<<< HEAD
 		
 		//Using StringBuilder class of java, which has inbuilt reverse method
 		
+=======
+		//Using StringBuilder class of java, which has inbuilt reverse method
+>>>>>>> branch 'master' of https://github.com/Thelyrebird1101/DataStructuresAndAlgorithms.git
 		private static String reverseString2(String str) {
 			StringBuilder sb = new StringBuilder();
 			return sb.append(str).reverse().toString();	

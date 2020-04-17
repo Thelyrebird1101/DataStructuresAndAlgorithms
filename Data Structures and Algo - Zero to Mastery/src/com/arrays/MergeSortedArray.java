@@ -12,6 +12,11 @@ public class MergeSortedArray {
 	}
 	
 	private static int[] mergeSorted(int[] arr1, int[] arr2) {
+		if(arr1.length==0)					//if either of arr1, and arr2 is null, then return the other array.  
+			return arr2;
+		else if(arr2.length ==0)
+			return arr1;
+		
 		int[] arr3  = new int[arr1.length + arr2.length]; // Create a new array of length sum of sizes of the two arrays
 		int i=0, j=0, k=0;
 		while(i<arr1.length && j<arr2.length) {
